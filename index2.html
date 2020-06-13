@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--Icon pour google-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+    <!--css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="style.css">
+
+    <!--js-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+
+    <script>
+
+        // Narbar script
+        document.addEventListener('DOMContentLoaded', function () {
+            var elem = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elem, {});
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar">
+        <nav class="blue">
+            <div class="container">
+                <div class="nav-wraper">
+                    <a href="#" class="brand-logo">MYadmin</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="index1.html">Posts</a></li>
+                        <li><a href="index2.html">Categories</a></li>
+                        <li><a href="index3.html">Comments</a></li>
+                        <li><a href="index4.html">Users</a></li>
+                        <li><a href="#"><i class="material-icons">menu</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+        <li class="blue white-text center"><img src="images (6).png" alt="" width="80px height: 80px;" class="circle">
+            <h5>Rachida Zakou</h5>
+            <p>chida@gmail.com</p>
+        </li>
+        <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+        <li><a href="#">Posts</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Comment</a></li>
+        <li><a href="#">Users</a></li>
+        <li><a href="#">Account Ccontrols</a></li>
+        <li><a href="#">Logout</a></li>
+    </ul>
+
+    <!--table-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="card-panel">
+                    <h6>Categories</h6>
+                    <table class="striped">
+                        <thead>
+
+                            <tr>
+                                <th>Title</th>
+                                <th>Date Created</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>Web development</td>
+                                <td>Oct 1, 2020</td>
+                                <td><button class="btn blue">DETAILS</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Graphic Design</td>
+                                <td>Oct 2, 2020</td>
+                                <td><button class="btn blue">DETAILS</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Tech Gadgets</td>
+                                <td>Oct 4, 2020</td>
+                                <td><button class="btn blue">DETAILS</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Other</td>
+                                <td>Oct 5, 2020</td>
+                                <td><button class="btn blue">DETAILS</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <ul class="pagination">
+                                        <li class="waves-effect blue-text"><a href="#"><i
+                                                    class="material-icons blue-text">chevron_left</i></a></li>
+                                        <li class="active blue"><a href="#">1</a></li>
+                                        <li class="waves-effect"><a href="#" class="blue-text">2</a></li>
+                                        <li class="waves-effect"><a href="#" class="blue-text">3</a></li>
+                                        <li class="waves-effect"><a href="#" class="blue-text">4</a></li>
+                                        <li class="waves-effect"><a href="#" class="blue-text">5</a></li>
+                                        <li class="waves-effect"><a href="#"><i
+                                                    class="material-icons blue-text">chevron_right</i></a></li>
+                                    </ul>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="row blue white-text center" style="padding-top: 30px; padding-bottom: 30px;">
+            <div class="col s12 m10">
+                <h6>MYadmin CodeLoccol Copyright © 2020</h6>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
